@@ -1,0 +1,127 @@
+@media only screen and (max-width: 1460px) {
+	.nav {
+	margin-right: 10%;
+	transition: 1.5s;
+}
+	.nav2 {
+	margin-left: 10%;
+	transition: 1.5s;
+}
+}
+@media only screen and (max-width: 1270px) {
+	.nav {
+	margin-right: 5%;
+}
+	.nav2 {
+	margin-left: 5%;
+}
+}
+@media only screen and (max-width: 1140px) {
+	.nav {
+	display: none;
+}
+	.nav2 {
+	display: none;
+}
+	.nav_logo {
+	font-size: 33px;
+	width: 100%;
+	text-align: center;
+	font-weight: 800;
+
+}
+	.head_content h1 {
+	font-family: 'Varela Round', sans-serif;
+	margin-bottom: 50px;
+	font-size: 40px;
+}
+	i.fa-bars {
+	display: block;
+	font-size: 26px;
+	position: absolute;
+	top:8%;
+	cursor:pointer;
+}
+/* MENU-JS */
+.menu ol li,a {
+		font-family: 'Lato', sans-serif;
+	display: flex;
+	margin-left: 150px;
+	flex-direction: column;
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 50px;
+}
+.menu ol a:hover {
+	border-bottom: 2px solid #267df4; 
+}
+.menu ol {
+	list-style-type: none;
+}
+.menu ol a {
+	font-weight: 500;
+	font-size: 18px;
+}
+.menu {
+	z-index: 1;
+	position: fixed;
+	left:-100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(181, 181, 181, 0.7);
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.5s;
+}
+.circle {
+	z-index: 2;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin:9% 40px;
+}
+.circle span, .circle span:before, .circle span:after {
+	position: absolute;
+	left: 30%;
+	top: 45%;
+	width: 30px;
+	background-color: #000;
+	height: 2px;
+}
+.circle span:before {
+	transition: 0.2s;
+	content: '';
+	margin-top: -8px;
+	left: 1%;
+}
+.circle span:after {
+	transition: 0.2s;
+	content: '';
+	margin-top: 8px;
+	left: 1%;
+
+}
+.circle_active span{
+	background-color: transparent;
+}
+	
+.circle_active span:after {
+	transform: rotate(-45deg);
+	margin: 0;
+}
+.circle_active span:before {
+transform: rotate(45deg);
+	margin: 0;
+}
+.menu_active {
+	left:-50vw;
+}
+/* MENU-JS */
+.head_content a {
+	display: none;
+}
+}
